@@ -1,12 +1,18 @@
-<h3>Login</h3>
-<form action="" method="post">
-    Email:<br/>
-    <input type="email" name="email" id="email"><br><br>
+<h2>TWITTER</h2>
 
-    Senha:<br/>
-    <input type="password" name="senha" id="senha"><br><br>
+<div class="row">
+    <div class="col-sm-3 col-md-3 col-lg-4">
+        <div class="form-group">
+            <form action="" method="post" >
+                <h3>Email:</h3><br/>
+                <input type="email" name="email" id="email"><br><br>
 
-    <input type="submit" value="Entrar">&nbsp;
-    <a href="<?=BASE_URL?>login/cadastro">Cadastre-se</a>
+                <h3>Senha:</h3><br/>
+                <input type="password" name="senha" id="senha"><br><br>
 
-</form>
+                <input type="submit" value="Entrar">&nbsp;
+                <a href="<?=BASE_URL?>login/cadastro">Cadastre-se</a>
+            </form>
+        </div>
+    </div>
+</div>

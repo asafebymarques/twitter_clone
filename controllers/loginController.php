@@ -19,7 +19,7 @@ class loginController extends Controller {
             }
         }
 
-        $this->loadView('login',$dados);
+        $this->loadTemplate('login',$dados);
     }
 
     public function cadastro(){
@@ -46,7 +46,7 @@ class loginController extends Controller {
             }
         }
 
-        $this->loadView('cadastro',$dados);
+        $this->loadTemplate('cadastro',$dados);
     }
 
     public function sair(){

@@ -20,22 +20,22 @@
 	<div style="clear:both"></div>
 
 	<h4>Sugestões de amigos</h4>
-	<table border="0" width="100%">
-		<tr>
-			<td width="80%"></td>
-			<td></td>
-		</tr>
+	<div class="container">
+		
 		<?php foreach($sugestao as $usuario):?>
-		<tr>
-            <td><?=$usuario['nome']?></td>
-            <td>
+		
+            <p><?=$usuario['nome']?></p>
+           
                 <?php if($usuario['seguido']=='0'):?>
-				<a href="/twitter_clone/home/seguir/<?=$usuario['id']?>">Seguir</a>
+				<form action="/twitter_clone/home/seguir/<?=$usuario['id']?>">
+				<button type="submit" class="btn btn-success" >Seguir</button>
+				</form>
 				<?php else:?>
-				<a href="/twitter_clone/home/deseguir/<?=$usuario['id']?>">Deixar de seguir</a>
+				<form class="" action="/twitter_clone/home/deseguir/<?=$usuario['id']?>" >
+				<button  class="btn btn-success">Deixar de seguir</button>
+				</form>
 				<?php endif;?>
-            </td>
-		</tr>
+            
 		<?php endforeach;?>
-	</table>
+	</div>
 </div>
